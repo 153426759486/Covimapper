@@ -1,0 +1,53 @@
+<!-- CODE EXPLAINED TUTORIALS -->
+<!-- youtube.com/CodeExplained -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./resources/css/style.css" />
+    <title>Covi-Mapper</title>
+    <link rel = "icon" href = "../resources" type = "image/x-icon">
+    <script src="https://kit.fontawesome.com/afd6aa68df.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    
+    <div class="map-container">
+      <iframe class="map-iframe" src="https://public.domo.com/cards/31O7r" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+  </div>
+  <div class="table-container">
+    <iframe class="table-iframe" src="https://public.domo.com/cards/aOm4g" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+</div>
+<div class="graph-container">
+  <iframe class="graph-iframe" src="https://public.domo.com/cards/epNEr" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+</div>
+    <div class="bar"></div>
+    <div class="Earth"></div>
+    <div class="mask"></div>
+    <div class="titlebar"><h3>Covi-Mapper</h3></div>
+   <div class="Nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="table.html">Table</a></li>
+      <li><a href="Symptoms.html">Symptoms</a></li>
+      <li><a href="Prevention.html">Prevention</a></li>
+      
+  </ul>
+</div>
+    <main>
+  
+
+
+<script type="text/javascript">
+  const currentLocation=location.href;
+  const menuItem=document.querySelectorAll('a');
+  const menuLength=menuItem.length
+  for(let i=0; i<menuLength; i++){
+      if(menuItem[i].href ===currentLocation){
+          menuItem[i].className="active"
+      }
+  }
+</script>
+  </body>
+</html>

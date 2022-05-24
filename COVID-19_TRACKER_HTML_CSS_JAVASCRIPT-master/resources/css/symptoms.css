@@ -1,0 +1,197 @@
+body{
+    background-color: #01171b;
+    
+    
+}
+.Symptoms{
+    position: absolute;
+    color: #fff;
+    margin-top: 40px;
+    margin-left: -290px;
+    
+
+ }
+ .para{
+    position: absolute;
+    color: #fff;
+    margin-top: 40px;
+    margin-left: -635px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.para2{
+    position: absolute;
+    color: #fff;
+    margin-left: -635px;
+    margin-top: 690px;
+    padding: 5px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Earth{
+    
+    
+    position:relative;
+    width: 130px;
+    height: 130px;
+    margin: 3em auto;
+    transition: transform 50ms linear;
+    animation: rotate-the-earth 80s linear infinite;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    background-image: url(../img/map2.png);
+    background-size:cover;
+    box-shadow: inset 0px 90px 90px -300px rgba(0,0,0,1), 10px 10px 20px rgba(0,0,0,0.5);
+    transform-style: preserve-3d;
+    margin-left: 2vh;
+    margin-top: vh;
+   
+}
+.Earth::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    border-radius: 100%;
+    box-shadow: -20px px 10px 10px rgba(0,0,0,0.9) inset;
+}
+.Earth::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    border-radius: 50%;
+    background: radial-gradient(circle at 100px 100px, #fff, #000);
+    opacity: 0.2;
+}
+@keyframes rotate-the-earth{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 2508px 0;
+    }
+}
+
+.mask{
+     
+    position:absolute;
+    width: 135px;
+    height: 90px;
+    
+    margin: 1em auto;
+    background-image: url(../img/mask2.png);
+    background-size:102%;
+    border-radius: 25%;
+    margin-left: 1.5vh;
+    margin-top: -17.6vh;
+   
+}
+.title{
+    position: absolute;
+    margin-top: -32.2vh;
+    margin-left: 2vh;
+    color: white;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bar{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(138, 207, 207);
+    width: 100%;
+    height: 5%;
+    margin-top: -234px;
+    margin-left: -8px;
+    position: absolute;
+    opacity: 0.2;
+
+}
+ul{
+    position: relative;
+    margin-top: -219px;
+    margin-left: 840px;
+    
+    
+    
+    
+}
+ul li{
+    display: block;
+    display: inline;
+    margin-right: 6px;
+    padding:0 24px;
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif ;
+    font-size: 20px;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(212, 202, 202);
+    
+}
+ a:hover {
+    background-color: rgb(184, 186, 189);
+    color: rgb(14, 13, 13);
+    border-radius: 3px;
+    transition: 0.5s;
+    text-decoration: underline;
+    
+    border: #10a1bb;
+  }
+
+ul li a.active{
+    background: rgb(184, 186, 189);
+    color: rgb(22, 21, 21);
+    border-radius: 3px;
+}
+.image1{
+    position: absolute;
+    background:url(../img/S3.png);
+    background-size: cover;
+    border-radius: 0%;
+    width: 157%;
+    height:80%;
+    margin-top: 150px;
+    margin-left: -635px;
+    
+    background-repeat: no-repeat;
+    animation: slide 0s infinite;
+    
+}
+.image2{
+    position: absolute;
+    background:url(../img/S2.png);
+    background-size: cover;
+    border-radius: 0%;
+    width: 157%;
+    height:100%;
+    margin-top: 1070px;
+    margin-left: -635px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: slide 0s infinite;
+
+}
+.image3{
+    background: url(../img/S4.png);
+    position: absolute;
+    background-size: cover;
+    
+    
+    width: 157%;
+    
+    height:100%;
+    margin-top: 1950px;
+    margin-left: -635px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: slide 0s infinite;
+}

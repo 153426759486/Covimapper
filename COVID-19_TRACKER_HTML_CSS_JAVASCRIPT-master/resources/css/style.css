@@ -1,0 +1,206 @@
+
+.body{
+    background-color: black;
+    
+}
+
+@font-face{
+    font-family: 'Gilroy';
+    src: url(./Gilroy-Regular.woff) format(woff);
+}
+/* ---------------------------------------------- */
+/*                    GENERAL                     */
+/* ---------------------------------------------- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+}
+html{
+    font-size: 16px;
+}
+.hide{
+    display: none;
+}
+.fadeIn{
+    animation: fade 0.5s ease-in-out;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* ---------------------------------------------- */
+/*                    HEADER                      */
+/* ---------------------------------------------- */
+
+/* -------- NAV -------- */
+
+.bar{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(44, 83, 83);
+    width: 100%;
+    height: 6%;
+    margin-top: -46px;
+    margin-left:0px;
+    opacity: 1;
+}
+/* ---------------------------------------------- */
+/*                      MAIN                      */
+/* ---------------------------------------------- */
+main{
+    
+    max-width: 12100px;
+    margin: 0px ;
+    margin-top:32px;
+    
+    
+    
+}
+/* -------- BG IMAGE -------- */
+
+.Earth{
+    
+    
+    position:absolute;
+    width: 130px;
+    height: 130px;
+    margin: 3em auto;
+    transition: transform 50ms linear;
+    animation: rotate-the-earth 80s linear infinite;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    background-image: url(../img/map2.png);
+    background-size:cover;
+    box-shadow: inset 0px 90px 90px -300px rgba(0,0,0,1), 10px 10px 20px rgba(0,0,0,0.5);
+    transform-style: preserve-3d;
+    margin-left: 2vh;
+    margin-top: 1vh;
+   
+}
+.Earth::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    border-radius: 100%;
+    box-shadow: -20px px 10px 10px rgba(0,0,0,0.9) inset;
+}
+.Earth::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    border-radius: 50%;
+    background: radial-gradient(circle at 100px 100px, #fff, #000);
+    opacity: 0.2;
+}
+@keyframes rotate-the-earth{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 2508px 0;
+    }
+}
+.mask{
+     
+    position:absolute;
+    width: 135px;
+    height: 90px;
+    
+    margin: 1em auto;
+    background-image: url(../img/mask2.png);
+    background-size:102%;
+    border-radius: 25%;
+    margin-left: 1.5vh;
+    margin-top: 6.7vh;
+   
+}
+.titlebar{
+    position: absolute;
+    margin-top: -3.5vh;
+    font-size: 20px;
+    font-family: monospace;
+    margin-left: 3vh;
+    color: white;
+    
+
+    
+
+}
+.Nav ul{
+    position: absolute;
+    margin-top: -23px;
+    margin-left: 900px;
+    
+    
+    
+    
+}
+.Nav ul li{
+    display: block;
+    display: inline;
+    margin-right: 6px;
+    padding:0 24px;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+.Nav ul li a{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(212, 202, 202);
+    
+}
+ .Nav a:hover {
+    background-color: rgb(184, 186, 189);
+    color: rgb(14, 13, 13);
+    border-radius: 3px;
+    transition: 0.5s;
+    text-decoration: underline;
+    
+    border: #10a1bb;
+  }
+
+.Nav ul li a.active{
+    background: rgb(184, 186, 189);
+    color: rgb(22, 21, 21);
+    border-radius: 3px;
+}
+.map-iframe {
+    position: absolute;
+    top: 10;
+    left: 16%;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.table-iframe {
+    position: absolute;
+    overflow: hidden;
+    top: 100%;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border: 0;
+}
+.graph-iframe {
+    position: absolute;
+    overflow: hidden;
+    top: 100%;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    border: 0;
+}

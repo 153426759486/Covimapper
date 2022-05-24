@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covi-Mapper</title>
+    <link rel = "icon" href = "/resources/img/logo1.png" type = "image/x-icon">
+    <link rel="stylesheet" href="./resources/css/table.css" />
+    <script src="https://kit.fontawesome.com/afd6aa68df.js" crossorigin="anonymous"></script>
+    
+    
+</head>
+<body>
+    <div class="web-container">
+        <iframe class="web-iframe" src="https://public.domo.com/cards/dJ45D" style="position: absolute;" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="Earth"></div>
+    <div class="mask"></div>
+    <div class="title"><h1>Covi-Mapper</h1></div>
+   <div class="bar"></div>
+   <div class="Nav">
+   <ul>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="About.html">About</a></li>
+       
+       <li><a href="table.html">Table</a></li>
+       
+       <li><a href="Symptoms.html">Symptoms</a></li>
+       <li><a href="Prevention.html">Prevention</a></li>
+       
+   </ul></div>
+
+   
+<script type="text/javascript">
+    const currentLocation=location.href;
+    const menuItem=document.querySelectorAll('a');
+    const menuLength=menuItem.length
+    for(let i=0; i<menuLength; i++){
+        if(menuItem[i].href ===currentLocation){
+            menuItem[i].className="active"
+        }
+    }
+</script>
+    
+
+      
+</body>
+</html>
